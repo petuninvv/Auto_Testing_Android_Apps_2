@@ -36,3 +36,14 @@ Feature: User is able to convert area units
     When I select "Hectare" from left column
     Then I see "Hectare" in From header
     And I get "10000" in To field
+
+  @wip
+  Scenario Outline:
+    When I select "<target>" from left column
+    And I get "<result>" in To field
+
+    Examples:
+      |target|result|
+      |Hectare|10000|
+      |Sq Yard|0.8362|
+      |Sq Foot|0.0929|
