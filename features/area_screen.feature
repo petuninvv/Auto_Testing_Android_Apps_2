@@ -1,9 +1,9 @@
 @area
 Feature: User is able to convert area units
 
-#  Background:
-#    Given I click on Got it button
-@wip
+  Background:
+    Given I click on Got it button
+
   Scenario: User is able to dismiss help
     Given I land on help popup
     When I click on Got it button
